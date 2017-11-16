@@ -1,7 +1,5 @@
 # ValidityTraineeProgram:ICO
-@TODO:
-- empty crowdsale und
-- empty mintabletoken ableitung, die nur name symbol decimals hat
+Hello World ICO trainee program by Validity Labs.
 
 ## VSCode Plugin recommendations
 We strongly recommend to use [Visual Studio Code](https://code.visualstudio.com/) with the following plugins, because it provides the best solidity development experience and ensures compliance with our coding styleguide and rules.
