@@ -16,7 +16,7 @@ contract IcoCrowdsale is Crowdsale, Ownable {
     uint256 rate;
     address wallet;
 
-    event Hello(address owner, uint256 startTime, uint256 endTime, uint256 rate, address wallet);
+    event Hello(address owner);
 
     function IcoCrowdsale(
         uint256 _startTime,
@@ -27,19 +27,14 @@ contract IcoCrowdsale is Crowdsale, Ownable {
         public
         Crowdsale(_startTime, _endTime, _rate, _wallet)
     {
-        startTime = _startTime;
-        endTime = _endTime;
-        rate = _rate;
-        wallet = _wallet;
-
     }
 
     function helloPrivate() public onlyOwner {
-        Hello(msg.sender, startTime, endTime, rate, wallet);
+        Hello(msg.sender);
     }
 
     function helloWorld() public {
-        Hello(msg.sender, startTime, endTime, rate, wallet);
+        Hello(msg.sender);
     }
 
     /**

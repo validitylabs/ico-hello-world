@@ -43,10 +43,12 @@ contract('IcoCrowdsale', (accounts) => {
         const events    = getEvents(tx, 'Hello');
 
         assert.equal(events[0].owner, owner, 'Owner does not match');
-        assert.equal(events[0].wallet, wallet, 'Wallet does not match');
-        events[0].startTime.should.be.bignumber.equal(cnf.startTime);
-        events[0].endTime.should.be.bignumber.equal(cnf.endTime);
-        events[0].rate.should.be.bignumber.equal(cnf.rate);
+    });
+
+    it('should assert a bignumber fake value properly', async () => {
+        const fakeValue = new BigNumber(3e15);
+
+        fakeValue.should.be.bignumber.equal(cnf.rate);
     });
 
     it('should fail, because we try to call helloPrivate with a non owner account', async () => {

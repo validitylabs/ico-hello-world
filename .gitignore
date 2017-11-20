@@ -6,3 +6,5 @@ node_modules
 /build
 /coverage*
 /db
+/scripts
+/docs
