@@ -37,7 +37,7 @@ contract('IcoCrowdsale', (accounts) => {
      */
 
     it('should call the Hello event properly', async () => {
-        console.log('[ Running test section 1 ]'.yellow);
+        console.log('[ Period 1 ]'.yellow);
 
         const tx        = await icoCrowdsaleInstance.helloWorld({from: owner, gas: 1000000});
         const events    = getEvents(tx, 'Hello');

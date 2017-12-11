@@ -18,6 +18,13 @@ contract IcoCrowdsale is Crowdsale, Ownable {
 
     event Hello(address owner);
 
+    /**
+     * @dev Constructor of IcoCrowdsale
+     * @param _startTime uint256 Start time for the crowdsale
+     * @param _endTime uint256 End time for the crowdsale
+     * @param _rate uint256 Rate for the crowdsale
+     * @param _wallet uint256 Wallet address for the beneficiary
+     */
     function IcoCrowdsale(
         uint256 _startTime,
         uint256 _endTime,
@@ -29,10 +36,16 @@ contract IcoCrowdsale is Crowdsale, Ownable {
     {
     }
 
+    /**
+     * @dev Triggers a hello world event for owner account only
+     */
     function helloPrivate() public onlyOwner {
         Hello(msg.sender);
     }
 
+    /**
+     * @dev Triggers a hello world event
+     */
     function helloWorld() public {
         Hello(msg.sender);
     }

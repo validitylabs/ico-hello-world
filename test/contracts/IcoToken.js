@@ -26,13 +26,7 @@ contract('IcoToken', (accounts) => {
         icoTokenInstance = await IcoToken.deployed();
     });
 
-    /**
-     * Test section 1
-     */
-
     it('should instantiate the ICO token correctly', async () => {
-        console.log('[ Running test section 1 ]'.yellow);
-
         const name      = await icoTokenInstance.name();
         const symbol    = await icoTokenInstance.symbol();
         const decimals  = await icoTokenInstance.decimals();

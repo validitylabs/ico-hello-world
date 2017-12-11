@@ -60,7 +60,7 @@ test
 ```
 __The development console will automatically start it's own TestRPC server for you!__
 
-__Because the test consumes a lot of ETH, please restart the development console between each test!__
+__Because the tests may consumes a lot of ETH, please restart the development console between each test!__
 
 ## Run the coverage test
 To run the coverage tests, go into the projects root directory and run the coverage test like that.
