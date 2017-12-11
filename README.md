@@ -1,4 +1,4 @@
-# ValidityTraineeProgram:ICO
+# ICO
 Hello World ICO example by Validity Labs.
 
 ## VSCode Plugin recommendations
